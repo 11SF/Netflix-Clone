@@ -8,12 +8,12 @@ function Navbar() {
                 <div className="text-white flex flex-wrap">
                     {/* <h1 className="pr-8 text-red-600 text-3xl font-semibold">Netflix</h1> */}
                     <img src={netflix_logo} alt="netflix_logo" className="h-8 pr-8" />
-                    <span className="px-3 m-auto">หน้าหลัก</span>
-                    <span className="px-3 m-auto">รายการทีวี</span>
-                    <span className="px-3 m-auto">ภาพยนต์</span>
-                    <span className="px-3 m-auto">มาใหม่และกำลังฮิต</span>
-                    <span className="px-3 m-auto">รายการของฉัน</span>
-                    <span className="px-3 m-auto">ดูอีกครั้ง</span>
+                    <span className="px-3 m-auto cursor-pointer hover:text-gray-500">หน้าหลัก</span>
+                    <span className="px-3 m-auto cursor-pointer hover:text-gray-500">รายการทีวี</span>
+                    <span className="px-3 m-auto cursor-pointer hover:text-gray-500">ภาพยนต์</span>
+                    <span className="px-3 m-auto cursor-pointer hover:text-gray-500">มาใหม่และกำลังฮิต</span>
+                    <span className="px-3 m-auto cursor-pointer hover:text-gray-500">รายการของฉัน</span>
+                    <span className="px-3 m-auto cursor-pointer hover:text-gray-500">ดูอีกครั้ง</span>
                 </div>
                 <div className="text-white flex justify-between content-center w-32">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
