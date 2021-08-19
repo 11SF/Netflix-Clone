@@ -3,14 +3,14 @@ import React from 'react'
 
 
 
-function BigRecommend() {
+function BigRecommend({movie}) {
     return (
-        <div style={{backgroundImage: "url('https://image.tmdb.org/t/p/original/620hnMVLu6RSZW6a5rwO8gqpt0t.jpg')", backgroundSize: "cover"}}>
+        <div style={{backgroundImage: `url('https://image.tmdb.org/t/p/original${movie.backdrop_path}')`, backgroundSize: "cover"}}>
             <div className="bg-gradient-to-r from-black">
                 <div className="container m-auto h-screen w-screen flex">
                     <div className="w-1/2 self-center text-left">
-                        <h1 className="text-8xl font-bold text-white">Luca</h1>
-                        <p className="mt-20 text-lg text-white">เรื่องเกิดขึ้นในเมืองริมทะเลอันสวยงามชายฝั่งอิตาเลียน ริเวียร่า ภาพยนตร์ออริจินัลจากดิสนีย์ พิกซาร์ “ลูก้า” คือเรื่องราวของการก้าวผ่านวัยของเด็กชายคนหนึ่งกับประสบการณ์ในหน้าร้อนที่ยากจะลืม ที่เต็มไปด้วยเจลาโต้ พาสต้า และการขี่สกู๊ตเตอร์แบบไม่รู้จบ ลูก้า (พากย์เสียงโดย เจค็อบ เทรมเบลย์)ได้ออกผจญภัยไปกับเพื่อนซี้คนใหม่ที่เพิ่งได้เจอ อัลเบอร์โต้ (พากย์เสียงโดย แจ็ค ดีแลน เกรเซอร์) แต่ความสนุกทั้งหลายก็ถูกขัดขวางโดยความลับที่ถูกซ่อนไว้ ว่าพวกเขาคือมอนสเตอร์ใต้ทะเลลึกจากโลก</p>
+                        <h1 className="text-8xl font-bold text-white">{movie.title}</h1>
+                        <p className="mt-20 text-lg text-white">{movie.overview}</p>
                         <div className="mt-10 flex">
                             <div>
                                 <button className="bg-white px-10 py-2 rounded-sm mr-3 flex">
@@ -32,7 +32,9 @@ function BigRecommend() {
                         </div>
                     </div>   
                 </div>
+            <div className="h-24 w-full bg-gradient-to-b from-transparent to-black"/>
             </div>
+            {/* <div className="h-28 w-full bg-gradient-to-b from-transparent to-black"/> */}
         </div>
     )
 }
