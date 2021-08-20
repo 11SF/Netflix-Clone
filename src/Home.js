@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import BigRecommend from './components/BigRecommend'
 import RecommendList from './components/RecommendList'
-import axios from 'axios'
+// import axios from 'axios'
 
 function Home() {
-    let data = [1,2,3,4,5,6,7,8,9,10]
+    // let data = [1,2,3,4,5,6,7,8,9,10]
     
     return (
                 <div>
